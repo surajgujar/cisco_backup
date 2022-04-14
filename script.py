@@ -25,7 +25,7 @@ for ip in f0.readlines():
       chan.send('sh run\n')
       time.sleep(20)
       output = chan.recv(999999)
-      filename = "Backup-"+str(ip)+"_"+str(now.month)+"_"+str(now.day)+"_"+str(now.year)+"_"+str(now.hour)+":"+str(now.minute)+".txt"
+      filename = "/root/Cisco_switch_Backups/Backup-"+str(ip)+"_"+str(now.month)+"_"+str(now.day)+"_"+str(now.year)+"_"+str(now.hour)+":"+str(now.minute)+".txt"
       f1 = open(filename, 'a')
       f1.write(output.decode("utf-8") )
       f1.close()
