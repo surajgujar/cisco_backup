@@ -25,7 +25,7 @@ for ip in f0.readlines():
       chan.send('sh run\n')
       time.sleep(20)
       output = chan.recv(999999)
-      filename = "Backup-"+"%s_%.2i%.2i%i_%.2i%.2i%.2i" % (ip,now.year,now.month,now.day,now.hour,now.minute,now.second)
+      filename = "Backup-"+"%s_%.2i%.2i%i_%.2i_%.2i" % (ip,now.month,now.day,now.year,now.hour,now.minute,now.second)+".txt"
       f1 = open(filename, 'a')
       f1.write(output.decode("utf-8") )
       f1.close()
