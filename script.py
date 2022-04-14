@@ -9,7 +9,7 @@ password = "cisco"
 enable_password = "cisco"
 # mention username and password 
 port=22
-f0 = open('cisco_devices.txt')
+f0 = open('/root/Cisco_switch_Backups/cisco_devices.txt')
 for ip in f0.readlines():
       ip = ip.strip()
       ssh = paramiko.SSHClient()
