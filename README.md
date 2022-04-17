@@ -14,7 +14,7 @@ To activate virtual env:
 source bin/activate
 
 To Install paramiko Library:
-python -m pip install paramiko
+python -m pip install -r requirements.txt
 
 Input file of script:
 /root/Cisco_switch_Backups/cisco_devices.txt
