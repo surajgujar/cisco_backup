@@ -7,6 +7,9 @@ Solution:
 sed -i 's/mirrorlist/#mirrorlist/g' /etc/yum.repos.d/CentOS-Linux-*
 sed -i 's|#baseurl=http://mirror.centos.org|baseurl=http://vault.centos.org|g' /etc/yum.repos.d/CentOS-Linux-*
 
+Install Python3
+sudo dnf install python3
+
 To Create Virtual environment:
 python3 -m venv .
 
